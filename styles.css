@@ -36,6 +36,7 @@ body {
 
 .top-bar {
     position: sticky;
+    top: 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.6rem;
@@ -52,7 +53,7 @@ div .brand {
     font-size: 3rem;
 }
 
-div span.brand {
+span.brand {
     color: rgb(255, 0, 0);
 }
 
@@ -70,13 +71,17 @@ div span.brand {
     justify-content: center;
     margin-top: 7rem;
     cursor: pointer;
+    
 }
 
 a {
     font-size: var(--primary-font-size);
-    margin: 0rem 4rem;
     color: black;
     text-decoration: none;
+}
+
+.categories a {
+    margin: 0rem 4rem;
 }
 
 .search-box form {
@@ -147,3 +152,12 @@ form i {
     cursor: pointer;
 }
 
+/*==================== SIDEBAR SECTION ===========*/
+
+.sidebar-labels {
+    display: block;
+    font-size: 4rem;
+    border-bottom: 1px solid var(--color-quaternary);
+    width: 100%;
+    box-shadow: var(--box-shadow-input);
+}
