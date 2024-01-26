@@ -3,6 +3,7 @@
 
 :root{
 --primary-font-size: 2rem;
+--hover-primary-font-size: 2.2rem;
 --box-shadow-input: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
 --secondary-font-size : 1.5rem;
 --color-primary: #49b168;
@@ -72,6 +73,10 @@ span.brand {
     margin-top: 7rem;
     cursor: pointer;
     
+}
+
+.categories a:hover {
+    color: var(--color-sixth);
 }
 
 a {
@@ -161,3 +166,28 @@ form i {
     width: 100%;
     box-shadow: var(--box-shadow-input);
 }
+
+.sidebar-labels:hover{
+    margin-left: 1rem;
+    color: var(--color-sixth) ;
+}
+
+/*==================== MAIN SECTION=================*/
+
+#products-container div img{
+    margin-right: 4rem;
+    margin-left: 4rem;
+}
+#products-container div img:hover{
+    margin-right: 4rem;
+    margin-left: 4rem;
+}
+
+#products-container div p{
+    font-size: var(--primary-font-size);
+}
+
+#products-container div:hover{
+    color: var(--color-primary);
+}
+
