@@ -1,89 +1,97 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
-
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/10.7.2/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/10.7.2/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/10.7.2/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/10.7.2/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/10.7.2/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/10.7.2/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/10.7.2/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/10.7.2/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/10.7.2/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/10.7.2/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accesories for Motorcycles</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container-fluid p-0">
+        <div class="top-bar" >
+            <div id="right-top">
+                <div class="logo">
+                    <img src="./images/logo.png" alt="Company logo">
+                </div>
+                <h2 class="brand">MOTORS&<span class="brand">CRAZIES</span></h2>
+            </div>
+            <!--====================END OF RIGHT-TOP====================-->
+            <div id="middle-top">
+                <div class="search-box mt-5" >
+                    <form action="/form" method="get">
+                        <label for="search">Search</label>
+                        <div class="search-container">
+                            <input type="text" id="search" name="wanted-article" placeholder="Enter the product that you are looking for">
+                            <i class="bi bi-search"></i>
+                        </div>
+                    </form>
+                </div>
+                <div class="categories">
+                    <a href="#">Guantes</a>
+                    <a href="#">Chaquetas</a>
+                    <a href="#">Botas</a>
+                    <a href="#">Impermeables</a>
+                </div>
+            </div>
+            <div id="left-top">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label fs-4" for="exampleCheck1">Do you agree the terms and conditions?</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary mb-3 btn-lg">Submit</button>
+                    <i class="bi bi-cart"></i>
+                </form>
+            </div>
+        </div> 
+        <!--====================END OF TOP-BAR====================-->
+        <div id="main" class="container-fluid m-0 p-0">
+            <div class="row m-0 p-0">
+                <aside id="sidebar" class="col-3 mt-5 text-center p-0">
+                    <div id="sidebar1"></div>
+                    <div id="sidebar2" class="mt-3"></div>
+                    <div id="sidebar3" class="mt-3"></div>
+                    <div id="sidebar4" class="mt-3"></div>
+                    <div id="sidebar5" class="mt-3"></div>
+                    <div id="sidebar6" class="mt-3"></div>
+                    <div id="sidebar7" class="mt-3"></div>
+                    <div id="sidebar8" class="mt-3"></div>
+                    <div id="sidebar9" class="mt-3"></div>
+                    <div id="sidebar10" class="mt-3"></div>
+                </aside>
+        <!--====================END OF ASIDE======================-->
+                <div id="products-container" class="col-9 d-flex flex-wrap align-items-center justify-content-center">
+                    <div id="product1" ></div>
+                    <div id="product2" ></div>
+                    <div id="product3" ></div>
+                    <div id="product4" ></div>
+                    <div id="product5" ></div>
+                    <div id="product6" ></div>
+                    <div id="product7" ></div>
+                    <div id="product8" ></div>
+                </div>
+        <!--====================END OF MAIN======================-->
+            </div>
+        </div>
     </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script> 
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+<script src="./components/sidebar-jsx-comp.js" type="text/jsx"></script>
+<script src="./components/products-jsx-comp.js" type="text/jsx"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
 </html>
