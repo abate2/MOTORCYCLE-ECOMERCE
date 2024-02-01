@@ -21,3 +21,4 @@ ReactDOM.render(<Product source="./images/guantes.jpg" description="Gloves5" pri
 ReactDOM.render(<Product source="./images/guantes.jpg" description="Gloves6" price="$12USD"/>, document.getElementById("product6"))
 ReactDOM.render(<Product source="./images/guantes.jpg" description="Gloves7" price="$20USD"/>, document.getElementById("product7"))
 ReactDOM.render(<Product source="./images/guantes.jpg" description="Gloves8" price="$40USD"/>, document.getElementById("product8"))
+ReactDOM.render(<Product source="./images/guantes.jpg" description="Gloves9" price="$11USD"/>, document.getElementById("product9"))
